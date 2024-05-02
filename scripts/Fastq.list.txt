@@ -1,0 +1,5 @@
+1	Pt10	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt10.R1.fastq.gz	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt10.R2.fastq.gz
+2	Pt8	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt8.R1.fastq.gz	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt8.R2.fastq.gz
+3	Pt9	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt9.R1.fastq.gz	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt9.R2.fastq.gz
+4	Pt12	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt12.R1.fastq.gz	/mnt/beegfs/training/CITIWorkshops/RNASeq/data/FASTQ/Pt12.R2.fastq.gz
+
