@@ -15,6 +15,7 @@ mkdir data
 cd scripts
 mkdir o
 chmod 775 o
+##Aray size should be the total number of rows in fastq.list.txt file ?or n+1
 sbatch --array=1-4 FastQC.sh
 cd ../data/FastQC
 module load python/3.9.5

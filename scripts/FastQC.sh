@@ -37,7 +37,7 @@ do
 
 	echo ${count}
 
-	count=`expr $count + 1`
+	count=$(expr $count + 1)
 
 done  < ${filename}
 
