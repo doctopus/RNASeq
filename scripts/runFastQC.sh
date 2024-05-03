@@ -21,7 +21,7 @@ input=${pdir}/input
 fqcdir=${base}/FastQC
 mkdir -p ${fqcdir}
 
-filename=${input}/fastq.list.txt
+filename=${input}/fastqFiles.list.txt
 index=${SLURM_ARRAY_TASK_ID}
 
 count=1

@@ -1,0 +1,3 @@
+/mnt/beegfs/lab/RNASeq/output/rawbam/Sample_A1.Aligned.sortedByCoord.out.bam
+/mnt/beegfs/lab/RNASeq/output/rawbam/Sample_A2.Aligned.sortedByCoord.out.bam
+/mnt/beegfs/lab/RNASeq/output/rawbam/Sample_A3.Aligned.sortedByCoord.out.bam

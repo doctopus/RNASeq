@@ -1,3 +1,0 @@
-1	Sample_A1	/mnt/beegfs/lab/RNASeq/input/FASTQ/A1/A1_1.fq.gz	/mnt/beegfs/lab/RNASeq/input/FASTQ/A1/A1_2.fq.gz
-2	Sample_A2	/mnt/beegfs/lab/RNASeq/input/FASTQ/A2/A2_1.fq.gz	/mnt/beegfs/lab/RNASeq/input/FASTQ/A2/A2_2.fq.gz
-3	Sample_A3	/mnt/beegfs/lab/RNASeq/input/FASTQ/A3/A3_1.fq.gz	/mnt/beegfs/lab/RNASeq/input/FASTQ/A3/A3_2.fq.gz

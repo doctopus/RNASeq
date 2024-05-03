@@ -1,3 +1,4 @@
 .idea
 .DS_Store
-input/*.example.txt
+input/*.list.txt
+output/*.list.txt
