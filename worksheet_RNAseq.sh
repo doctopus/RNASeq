@@ -25,6 +25,10 @@ multiqc .
 cd ../scripts
 sbatch --array=1-25 runSTARalign.sh
 
+#Run create bamFiles.list; check if they have an extra line in the end
+sbatch --array=1-4 createBamFilesList.sh
+
+
 sbatch --array=1-4 featureCounts.sh
 
 ## run downstream analysis

@@ -11,7 +11,7 @@
 
 wdir=$('pwd')
 pdir=$(dirname "$wdir")
-base=${pdir}/data
+output=${pdir}/output
 input_dir=/mnt/beegfs/training/CITIWorkshops/RNASeq/data
 
-ls ${input_dir}/rawbam/*Aligned.sortedByCoord.out.bam > ${base}/Bamfiles.txt
+ls ${input_dir}/rawbam/*Aligned.sortedByCoord.out.bam > ${output}/bamFiles.list.txt
