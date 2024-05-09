@@ -8,6 +8,7 @@
 #SBATCH -o ./o/FastQC_%A_%a.out
 #SBATCH -e ./o/FastQC_%A_%a.err
 
+start_time=$(date +%s)
 
 echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
@@ -41,6 +42,12 @@ do
 
 done  < ${filename}
 
+end_time=$(date +%s)
+time_taken=$((end_time - start_time))
+time_taken_formatted=$(date -u -d @${time_taken} +"%H:%M:%S")
+# Capture the default output filename specified by #SBATCH -o
+output_file=$(scontrol show job "$SLURM_JOB_ID" | awk -F= '/Command=/{print $2}')
+echo "Time taken by $SLURM_JOB_NAME: $time_taken_formatted" | tee -a "$output_file"
 
 # #### When finished, there is a multiqc package to combine FastQC results
 # #### module load python/3.9.5
