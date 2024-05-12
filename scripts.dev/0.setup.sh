@@ -20,7 +20,7 @@ if [ ! -d "resources" ]; then
     echo "Created folder: resources"
 fi
 
-# Check and create scripts folder
+# Check and create scripts.dev folder
 if [ ! -d "scripts" ]; then
     mkdir -p "scripts"
     echo "Created folder: scripts"

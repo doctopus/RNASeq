@@ -3,12 +3,12 @@
 ssh usr@10.88.8.31
 pwd:
 
-###Setting up your space on Beegfs and copy over data and scripts 
+###Setting up your space on Beegfs and copy over data and scripts.dev
 cd /mnt/beegfs/{user}/
 mkdir RNAseq
 cd RNAseq
 
-###Copy scripts to this directory:
+###Copy scripts.dev to this directory:
 rsync -r --progress /mnt/beegfs/training/CITIWorkshops/RNASeq/scripts .
 mkdir output
 
