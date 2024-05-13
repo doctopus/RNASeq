@@ -26,14 +26,14 @@ base=${pdir}/data
 resources=${pdir}/resources
 
 #mkdir -p ${base}/rawbam
-mkdir -p ${base}/BAM
+mkdir -p ${base}/BAMIndex
 
 reference=${resources}/STARIndex
 #gtf=${resources}/GTF/gencode.v36.chr_patch_hapl_scaff.annotation.gtf
 gtf=${resources}/GTF/gencode.v45.chr_patch_hapl_scaff.annotation.gtf
 
-# filename=${wdir}/Fastq.list.txt
-filename=${wdir}/trimmedFastq.list.txt
+filename=${wdir}/Fastq.list.txt
+#filename=${wdir}/trimmedFastq.list.txt
 uniquesample=(318-Control_A1 318-Control_A2 318-Control_A3 \
 				318-128-10_B1 318-128-10_B2 318-128-10_B3 \
 				318-130_C1 318-130_C2 318-130_C3 \
@@ -43,7 +43,7 @@ uniquesample=(318-Control_A1 318-Control_A2 318-Control_A3 \
 				358-130_G1 358-130_G2 358-130_G3 \
 				358-128-13_H1 358-128-13_H2 358-128-13_H3)
 index=${SLURM_ARRAY_TASK_ID}  
-wrkgdir=${base}/BAM
+wrkgdir=${base}/BAMIndex
 # threads=16
 count=1
 

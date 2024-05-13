@@ -31,7 +31,7 @@ multiqc .
 
 #Only if Trimming not needed then run alignment (Index is taken from training, based on old gtf nd fa)
 cd ../scripts
-sbatch --array=1-4 STAR_align.sh
+sbatch --array=1-25 STAR_align.sh
 
 #Check MultiQC File: If Trimming needed then
 #Run Trimmomatic
@@ -42,6 +42,7 @@ sbatch createTrimmedFastqList.sh
 #This creates a trimmedFastq.list.txt in scripts
 #TODO For now added a trailing empty line, but fix this code so no empty lines are needed
 #TODO creates paths as /home/beherat2.. not wrt /mnt/
+# Looks like the default line break is alright. No need to add a extra line
 
 #Run QC Again
 sbatch --array=1-25 runFastqcOnTrimmed.sh
