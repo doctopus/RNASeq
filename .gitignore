@@ -2,3 +2,4 @@
 .DS_Store
 input/*.list.txt
 output/*.list.txt
+scripts/*.list.txt

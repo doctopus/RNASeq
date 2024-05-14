@@ -11,13 +11,13 @@
 
 ### cleaning the rawbam folder and getting Bamfiles file
 
-wdir=$('pwd')
+wdir=$(realpath "$(pwd)")
 pdir=$(dirname "$wdir")
 base=${pdir}/data
-
-input_dir=${base}/BAM
+scripts=${wdir}
+input_dir=${base}/BAMIndex
 
 ##ls ${input_dir}/rawbam/*Aligned.sortedByCoord.out.bam > ${base}/Bamfiles.txt
-ls "${input_dir}"/*Aligned.sortedByCoord.out.bam > "${base}/bamFiles.list.txt"
+ls "${input_dir}"/*Aligned.sortedByCoord.out.bam > "${scripts}/bamFiles.list.txt"
 # Add an extra line in the end
-echo >> "${base}/bamFiles.list.txt"
+#echo >> "${scripts}/bamFiles.list.txt"

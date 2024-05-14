@@ -14,17 +14,17 @@ module load python/2.7.18
 module load R/4.3.2
 module load subread/2.0.6
 
-wdir=$('pwd')
+wdir=$(realpath "$(pwd)")
 pdir=$(dirname "$wdir")
 base=${pdir}/data
-##resources=/mnt/beegfs/training/CITIWorkshops/RNASeq/resources
+scripts=${wdir}
 resources=${pdir}/resources
 
 index=${SLURM_ARRAY_TASK_ID}
 ##bamfiles=${wdir}/Bamfiles.txt
-bamfiles=${base}/bamFiles.list.txt
+bamfiles=${scripts}/bamFiles.list.txt
 # output=${base}/subread/featureCounts
-output=${base}/FeatureCounts
+output=${base}/FeatureCountsIndex
 mkdir -p ${output}
 #gtf=${resources}/GTF/gencode.v36.chr_patch_hapl_scaff.annotation.gtf
 gtf=${resources}/GTF/gencode.v45.chr_patch_hapl_scaff.annotation.gtf
