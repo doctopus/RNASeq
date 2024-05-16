@@ -30,7 +30,7 @@ mkdir -p ${resources}/STARIndex
 
 reference=${resources}/STARIndex
 #gtf=${resources}/GTF/gencode.v36.chr_patch_hapl_scaff.annotation.gtf
-#filename=${wdir}/Fastq.list.txt  
+#filename=${wdir}/fastqFiles.list.txt
 
 # index=${SLURM_ARRAY_TASK_ID}  
 # threads=16

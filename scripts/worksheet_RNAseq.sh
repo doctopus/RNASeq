@@ -22,8 +22,8 @@ sbatch buildSTARIndex.sh
 #TODO looks like it still not able to move the log file so revert the resources chmod to 755
 
 #Run Initial QC
-#TODO In current code Fastq.list.txt needs to have an extra empty line in the end else last sample is not processed
-#Array size needs to be +1 the lines of Fastq.list.txt
+#TODO In current code fastqFiles.list.txt needs to have an extra empty line in the end else last sample is not processed
+#Array size needs to be +1 the lines of fastqFiles.list.txt
 sbatch --array=1-25 FastQC.sh
 cd ../data/FastQC
 module load python/3.9.5

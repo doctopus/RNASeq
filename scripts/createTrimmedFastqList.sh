@@ -19,7 +19,7 @@ TRIMMED_FASTQ_DIR="${base}/FASTQ_TRIMMED"
 
 #mkdir -p ${TRIMMED_FASTQ_DIR}
 
-input_file="${wdir}/Fastq.list.txt"
+input_file="${wdir}/fastqFiles.list.txt"
 output_file="${wdir}/trimmedFastq.list.txt"
 
 count=0

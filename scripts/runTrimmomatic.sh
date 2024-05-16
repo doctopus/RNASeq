@@ -25,7 +25,7 @@ TRIMMED_FASTQ_DIR=${base}/FASTQ_TRIMMED
 
 mkdir -p ${TRIMMED_FASTQ_DIR}
 
-filename=${wdir}/Fastq.list.txt
+filename=${wdir}/fastqFiles.list.txt
 
 
 export trimmomatic_dir=/cm/shared/apps/trimmomatic/0.39

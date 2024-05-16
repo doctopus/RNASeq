@@ -20,7 +20,7 @@ base=${pdir}/data
 fqcdir=${base}/FastQC
 mkdir -p ${fqcdir}
 
-filename=${wdir}/Fastq.list.txt
+filename=${wdir}/fastqFiles.list.txt
 index=${SLURM_ARRAY_TASK_ID}
 
 count=1

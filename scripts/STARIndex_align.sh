@@ -32,7 +32,7 @@ reference=${resources}/STARIndex
 #gtf=${resources}/GTF/gencode.v36.chr_patch_hapl_scaff.annotation.gtf
 gtf=${resources}/GTF/gencode.v45.chr_patch_hapl_scaff.annotation.gtf
 
-filename=${wdir}/Fastq.list.txt
+filename=${wdir}/fastqFiles.list.txt
 #filename=${wdir}/trimmedFastq.list.txt
 uniquesample=(318-Control_A1 318-Control_A2 318-Control_A3 \
 				318-128-10_B1 318-128-10_B2 318-128-10_B3 \
