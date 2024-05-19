@@ -8,7 +8,7 @@
 #SBATCH -o ./o/STAR_%A_%a.out
 #SBATCH -e ./o/STAR_%A_%a.err
 
-######
+#######
 echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
 module load python/2.7.18
@@ -18,7 +18,7 @@ module load samtools/1.8
 wdir=$('pwd')
 pdir=$(dirname "$wdir")
 base=${pdir}/data
-##resources=/mnt/beegfs/training/CITIWorkshops/RNASeq/resources
+
 resources=${pdir}/resources
 
 mkdir -p ${base}/rawbam

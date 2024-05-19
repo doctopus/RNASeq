@@ -1,5 +1,6 @@
 .idea
 .DS_Store
 input/*.list.txt
+input/*.csv
 output/*.list.txt
 scripts/*.list.txt
