@@ -9,6 +9,8 @@
 <a name="Official_Resources"></a> []({{{1)
 # [Official Resources &#9650;](#___top "click to go to top of document")
 
+Steps:
+  `rsync -r --progress /mnt/isilon/w_stemcell/yuj2lab/Tapas/scripts/ .`
 
 
 ![logo](assets/Alignment.png "Alignment")

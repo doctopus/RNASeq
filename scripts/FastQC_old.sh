@@ -3,16 +3,19 @@
 #SBATCH --job-name=FastQC
 #SBATCH --ntasks=1
 #SBATCH --partition=defq
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=2  
 #SBATCH --mem-per-cpu=3900
 #SBATCH -o ./o/FastQC_%A_%a.out
 #SBATCH -e ./o/FastQC_%A_%a.err
 
+# export DISPLAY=:0
 
 echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
-module load FastQC/0.11.7
+module load FastQC/0.11.9
 module load python/2.7.18
+# module load python/3.9.5
+# module load java/11.0.9
 
 wdir=$('pwd')
 pdir=$(dirname "$wdir")
@@ -20,7 +23,7 @@ base=${pdir}/data
 fqcdir=${base}/FASTQC
 mkdir -p ${fqcdir}
 
-filename=${wdir}/io/fastqFiles.list.txt
+filename=${wdir}/fastqFiles.list.txt
 index=${SLURM_ARRAY_TASK_ID}
 
 count=1
